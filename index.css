@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf4f5;
+}
+
+header {
+  background-color: #ff7171;
+  color: #6f383f;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav li a {
+  color: #6f383f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  margin-right: auto;
+  color: #6f383f;
+}
+
+.hamburg {
+  height: 50px;
+  font-weight: bold;
+  margin-left: 0;
+}
+
+.section-1 {
+  background-image: linear-gradient(45deg, #fff4b0, #ffd5ce);
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-section-text {
+  padding: 80px;
+}
+
+.main-heading {
+  color: #191919;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+
+.description {
+  color: #191919;
+  line-height: 150%;
+  font-size: 22px;
+}
+
+.hero-section-img-container {
+  width: 50%;
+  padding: 20px;
+}
+
+button {
+  border: none;
+  background-color: #ff7171;
+  color: #f5d1cd;
+  font-size: 16px;
+  padding: 12px 22px;
+  width: 220px;
+  margin-top: 16px;
+}
+
+.hero-img {
+  height: 100vh;
+}
+
+.section-2 {
+  background-image: linear-gradient(-45deg, #ffb6ed, #fff0b3);
+  padding: 80px;
+  display: flex;
+  gap: 20px;
+  max-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-container {
+  display: flex;
+  gap: 16px;
+}
+
+.small-images-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.large-image-container {
+  padding-right: 0;
+  margin-right: 0;
+  width: auto;
+}
+
+.large-image {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.text-box-container {
+  background-color: #ff7171;
+  padding: 40px;
+  margin-top: 20px;
+  color: #000;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 12px;
+}
+
+.click-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.click {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+}
+
+/*---------------------------------------------------------------------*/
+/* CSS for tablet view */
+@media screen and (max-width: 768px) {
+  nav li {
+    margin-left: 10px;
+  }
+
+  nav li a {
+    font-size: 20px;
+  }
+
+  .hero-section-text {
+    padding: 60px;
+  }
+
+  .main-heading {
+    font-size: 38px;
+    letter-spacing: 10px;
+  }
+
+  .description {
+    line-height: 110%;
+    font-size: 20px;
+  }
+
+  .section-2 {
+    padding: 60px 20px;
+  }
+
+  .hero-img {
+    height: 80vh;
+    width: 90vw;
+  }
+
+  .images-container {
+    padding: 10px;
+  }
+
+  .images-container img {
+    width: 95%;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 6px;
+  }
+}
+
+/* -------------------------------------------------------------------------------*/
+
+/* CSS for mobile view */
+@media screen and (max-width: 576px) {
+  nav li {
+    margin-left: 6px;
+  }
+
+  nav li a {
+    font-size: 14px;
+  }
+
+  .hamburg {
+    height: 30px;
+    font-weight: bold;
+  }
+
+  .section-1 {
+    flex-direction: column;
+  }
+
+  .hero-section-text {
+    padding: 80px 30px;
+  }
+
+  .main-heading {
+    font-size: 32px;
+    letter-spacing: 6px;
+  }
+
+  .hero-img {
+    width: 90vw;
+  }
+
+  .section-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .images-container {
+    order: 1;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 6px;
+  }
+
+  .click {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+}
